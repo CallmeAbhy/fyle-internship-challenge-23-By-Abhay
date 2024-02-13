@@ -68,10 +68,12 @@ After running the tests, you can view the coverage report in the `/coverage/inde
 
 ### API Service
 
-![API Service](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/2e452278-3059-456c-aba0-2e0048a865fa )
+![API Service1](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/0c902bd0-93eb-4ba5-9e89-beb0a3647436)
+
+![API Service2](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/2e452278-3059-456c-aba0-2e0048a865fa )
 
 ### Caching
 
-![Caching](screenshots/caching.png)
+![Caching](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/56fd6b5c-0ab6-48d1-bb80-5f2f3f118196)
 
 Explore GitHub repositories with RepoVista and enjoy seamless navigation and detailed coverage reports for the Search Component and API Service.
