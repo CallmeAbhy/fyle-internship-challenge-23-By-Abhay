@@ -1,0 +1,14 @@
+<div class="border-2 rounded-md hover:shadow-md transition-transform duration-300 transform hover:scale-105 overflow-hidden">
+    <div class="p-6">
+      <a target="_blank" href="{{url}}" class="text-indigo-500 font-semibold text-xl hover:underline">{{ name }}</a>
+      <p class="text-gray-700 mt-2">{{desc}}</p>
+    </div>
+    <div *ngIf="topics.length > 0" class="px-6 pt-2 pb-4">
+      <div class="flex flex-wrap gap-2">
+        <span *ngFor="let topic of topics.split(',')" class="bg-cyan-500 rounded-md py-1 px-2 text-sm font-semibold text-white">
+          {{ topic.trim() }}
+        </span>
+      </div>
+    </div>
+  </div>
+  

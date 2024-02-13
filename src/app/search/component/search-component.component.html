@@ -1,0 +1,24 @@
+<body class="bg-gradient-to-r from-cyan-400 to-light-blue-500 flex items-center justify-center h-screen">
+    <div class="bg-white p-8 rounded-lg shadow-md w-full max-w-md">
+      <h1 class="text-4xl font-extrabold mb-6 text-gray-800">Fyle Internship Challenge</h1>
+      <h2 class="text-2xl font-bold mb-4 text-gray-700">Search GitHub User</h2>
+      <form (ngSubmit)="onSubmit($event)" class="flex items-center">
+        <input 
+          type="text" 
+          class="p-3 border rounded-l-md focus:outline-none focus:border-cyan-700 w-full" 
+          placeholder="GitHub Username"
+          name="username" 
+          [(ngModel)]="searchQuery"
+        >
+        <button 
+          (click)="onSubmit($event)" 
+          type="submit"
+          class="bg-cyan-700 text-white p-3 rounded-r-md hover:bg-cyan-600 focus:outline-none focus:shadow-outline-cyan"
+        >
+          Go
+        </button>
+      </form>
+      <div *ngIf="isInputError" class="text-red-500 mt-3">{{inputErrorMessage}}</div>
+    </div>
+  </body>
+  
