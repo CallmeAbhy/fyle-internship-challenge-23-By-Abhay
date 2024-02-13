@@ -1,43 +1,77 @@
-# Fyle Frontend Challenge
+# RepoVista - GitHub Finder
 
-## Who is this for?
+RepoVista is a web application developed using Angular that allows users to find GitHub repositories by entering a GitHub username. It provides details about the user's repositories, including repository names, descriptions, and topics.
 
-This challenge is meant for candidates who wish to intern at Fyle and work with our engineering team. The candidate should be able to commit to at least 6 months of dedicated time for internship.
+## Website Link
 
-## Why work at Fyle?
+[RepoVista - GitHub Finder](https://fyle-internship-challenge-23-by-abhay.vercel.app/)
 
-Fyle is a fast-growing Expense Management SaaS product. We are ~40 strong engineering team at the moment. 
+## Local Setup
 
-We are an extremely transparent organization. Check out our [careers page](https://careers.fylehq.com) that will give you a glimpse of what it is like to work at Fyle. Also, check out our Glassdoor reviews [here](https://www.glassdoor.co.in/Reviews/Fyle-Reviews-E1723235.htm). You can read stories from our teammates [here](https://stories.fylehq.com).
+To run the application locally, follow these steps:
 
-## Challenge outline
+1. Install Angular CLI by referring to the [Angular CLI installation guide](https://angular.io/guide/setup-local).
 
-This challenge involves implementing application using github api. 
+2. Clone the repository to your local machine:
 
-The services that you need to use are already implemented - check out ApiService.
+   ```bash
+   git clone https://github.com/your-username/RepoVista.git
+   ```
 
-You can see details of this challenge [here](https://fyleuniverse.notion.site/fyleuniverse/Fyle-Frontend-development-challenge-cb5085e5e0864e769e7b98c694400aaa)
+3. Navigate to the project's root directory:
 
-__Note__ - This challenge is in angular. We work on angular frameworks & after you join we expect the same from you. Hence it is required to complete this assignement in angular itself.
+   ```bash
+   cd RepoVista
+   ```
 
-## What happens next?
+4. Install project dependencies:
 
-You will hear back within 48 hours from us via email.
+   ```bash
+   npm install
+   ```
 
-## Installation
+5. Run the application:
 
-1. Fork this repository to your github account.
-2. Clone the forked repository and proceed with steps mentioned below.
+   ```bash
+   ng serve
+   ```
 
-### Install requirements
-* Install angular cli [Ref](https://angular.io/cli)
-* `npm install` in this repository 
+   Open your browser and navigate to `http://localhost:4200/` to view RepoVista locally.
 
-## Development server
+## Testing
 
-Run `ng serve` for a dev server. Navigate to http://localhost:4200/. The app will automatically reload if you change any of the source files.
+To test the complete application, use the following command:
 
-## Further help
+```bash
+ng test
+```
 
-Visit the [Angular Documentation](https://angular.io/guide/styleguide) to learn more.
-Styling is to be strictly done with [Tailwind](https://tailwindcss.com/docs/installation).
+For testing specific components and services with 100% coverage, run:
+
+```bash
+ng test --watch=false --browsers=ChromeHeadlessNoSandbox --include src/app/services/api.service.spec.ts --include src/app/search/components/search-component.component.spec.ts --code-coverage
+```
+
+After running the tests, you can view the coverage report in the `/coverage/index.html` directory.
+
+## Screenshots
+
+### Search Component
+
+![Search Component](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/ee91cc34-6daf-44a0-809c-30c0fc12a950)
+
+### VS Code 
+
+![1](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/cd6e8503-b91b-42de-a7e3-de96311c68bb)
+
+![2](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/09801dd4-7ae8-4409-9741-345bfa62138a )
+
+### API Service
+
+![API Service](https://github.com/CallmeAbhy/Dashboard_Flask_X/assets/99988396/2e452278-3059-456c-aba0-2e0048a865fa )
+
+### Caching
+
+![Caching](screenshots/caching.png)
+
+Explore GitHub repositories with RepoVista and enjoy seamless navigation and detailed coverage reports for the Search Component and API Service.
